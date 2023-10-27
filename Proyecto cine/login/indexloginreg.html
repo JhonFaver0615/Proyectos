@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> <!--Permite utilizar caracteres especiales-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> <!--Permite ajustarse-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>APLICATIVO</title> <!--Titulo de la pagina-->
+</head>
+<body>
+	<div class="container"> <!--Se crea la clase container-->
+	<div class="align"> <!--Se crea la clase align-->
+		<img class="logo" src="imagen/logo-PhotoRoom.png"> <!--Se añade la imagen del logo-->
+			<a id="inicio" href="../index.html">Inicio</a>
+		<div class="card">
+			<div class="head">  <!--Se crean otras dos clases llamadas card y head-->
+				<div></div>
+				<a id="login"  href="indexlogin.html">Iniciar sesion</a>
+				<a id="register" class="selected" href="indexloginreg.html">Registrarse</a>  <!--Se definen dos identificadores unicos para el login de inicio de secion y el registro-->
+				<div></div>
+			</div>
+			<div class="tabs"> <!--Se crea la clase llamada tabs-->
+				<form action="agregarlogin.php"> <!--Se determina la pagina donde se envian los datos del formulario-->
+					<div class="inputs">
+						<div class="input">
+							<input placeholder="Correo Electronico" type="text" name="Correo_Electronico"> <!--Se crea el texto del recuadro del correo electronico del login-->
+							<img src="imagen/correo.png"> <!--Se añade el logo al recuadro-->
+						</div>
+						<div class="input">
+							<input placeholder="Nombre de Usuario" type="text" name="usuario">  <!--Se crea el texto del recuadro nombre de usuario del login-->
+							<img src="imagen/6073873.png"> <!--Se añade el logo al recuadro-->
+						</div>
+						<div class="input">
+							<input placeholder="Contraseña" type="password" name="contrasena"> <!--Se crea el texto del recuadro de contraseña del login-->
+							<img src="imagen/contraseña.png"> <!--Se añade un logo al recuadro-->
+						</div>
+					</div>
+						<button>Registrarse</button> <!--Se crea el boton de registrarse -->
+						<br>
+					</div>
+					<button>Iniciar sesion</button> <!--Se crea un boton de inicio de secion-->
+					
+				</form>
+			</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/index.js"></script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');/*Se importa una fuente de letra de google fonts*/
+
+*{
+    margin: 0;  /*Margen del documento*/
+    padding: 0; /*Espacio en el documento*/
+    box-sizing: border-box;  /*se especifica tener en cuenta cualquier valor del borde para el ancho o alto de un elemento.*/
+    text-decoration: none; /*Quitar el color azul*/
+    list-style: none;  /*Quitar los  puntos de las viñetas*/
+}
+
+body {
+    font-family: 'Bebas Neue', cursive; /*Se determina el tipo de fuente de toda la pagina*/
+    background-color: #030303;/*Color de fondo*/
+    color: #ffffff; /*Color de la letra*/
+
+}
+
+.container {
+    max-width: 1200px; /*Se determina el ancho maximo del menu*/
+    margin: 0 auto; /*Se centra el menu*/
+}
+.header {
+    background-image: url(../imagen/cine-grande.jpg); /*Se importa la imagen de fondo del menu*/
+    background-position: center center; /* Se determina la posicion central de la imagen de fondo */
+    background-size: cover; /*Permite preservar la proporcion propia de la imagen de fondo*/
+    min-height: 50vh; /*Se determina la altura del contenedor*/
+
+
+}
+
+.menu {
+    position: absolute;  /*Permite poner todas la opciones del menu incluyendo el titulo en la parte superior*/
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;  /*Permite ajustar la opcion del login*/
+    align-items: center; /*Permite centrar la opcion del login*/
+    justify-content: space-between; /*Permite ajustar el espacio equitativamente de las opciones del menu*/
+}
+
+.logo {
+    font-size: 35px;/*Tamaño de la fuente del logo*/
+    color: #ffffff; /*Color de texto*/
+}
+
+
+.menu .navbar ul li {
+    position: relative; /* Permite modificar la posicion de las opciones del menu*/
+    float: left; /* Permite alinear las opciones de navengacion hacia la izquierda*/
+
+}
+
+.menu .navbar ul li a {
+    font-size: 25px;/*Tamaño de fuente de las opciones de navegacion*/
+    padding: 20px;/*Espacio entre los elementos*/
+    color: #000000;/*Color del texto*/
+    display: block; /*Establece el espacio que ocupara el elemento por defecto*/
+
+}
+
+.menu .navbar ul li a:hover {
+    color: #dd1515; /*Color cuando el cursor pase por encima de las opciones de navegacion*/
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px; /* Ancho del desplegable del menu*/
+}
+
+.menu label {
+    cursor: pointer; /*Mostrar el cursor en forma de mano cuando este por encima del menu desplegable*/
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+}
+
+
+
+
+.btn-1 {
+    display: block; /*Establece el espacio que ocupara el elemento por defecto*/
+    padding: 7px 20px; /*Espacio del recuadro del login*/
+    background-color: #4d709e9f;/*Color de fondo de la opcion de navegacion login*/
+    color: #2c2422; /*Color del texto*/
+    font-size: 20px; /*Tamaño de la fuente*/
+}
+
+.btn-1:hover {
+    color: #ebebeb; /*Color cuando el cursor pase por encima de la opcion de navegacion login*/
+}
+
+
+
+
+.movies {
+    padding: 50px 0 0 0; /*Espacio entre los elementos*/
+    display: flex; /*Permite ajustar el espacio de las peliculas*/
+    flex-direction: column; /*Se ordenan los elementos en columna*/
+
+}
+
+h2 {
+    font-size: 45px; /*Tamaño de la fuente*/
+    margin-bottom: 20px /*Espacio de la parte inferior*/
+
+}
+
+hr {
+    border: 1px solid #103c8d;/*Color del borde*/
+    width: 50%; /*Ancho de la linea*/
+    margin-bottom: 40px; /*Espacio de la parte inferior*/
+}
+
+.box-container-1 ,
+.box-container-2 {
+
+    display: grid;/*Permite dividir los elementos en areas diferentes*/
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));/*Permite mostrar la portada de las peliculas en fila*/
+    gap: 40px; /*Espacio entre las columnas*/
+
+}
+
+.box-1 ,
+.box-2 {
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+}
+
+.box-1:nth-child(1),
+.box-1:nth-child(2),
+.box-1:nth-child(3){
+    display: inline-block; /*Permite dar un ancho al elemento*/
+
+}
+
+.box-1 video {
+    width: 100%; /*Ancho del video*/
+    height: 50%; /*Alto del video*/
+    object-fit: cover; /*Ajusta las proporciones de los videos*/
+}
+
+
+.box-2:nth-child(1),
+.box-2:nth-child(2),
+.box-2:nth-child(3){
+    display: inline-block; /*Permite dar un ancho al elemento*/
+}
+
+.box-2 video {
+    width: 100%; /*Ancho del video*/
+    height: 60%; /*Alto del video*/
+    object-fit: cover;
+}
+
+.load-more {
+    margin-top: 40px; /*Margen superior */
+    display: inline-block; /*Permite dar un ancho al elemento*/
+    padding: 10px 25px; /*Espacio del recuadro de ver mas*/
+    border-radius: 15px; /*Permite redondear el borde */
+    border: 1px solid #103c8d;  /*Color del borde*/
+    color: #103c8d; /*Color del texto*/
+    font-size: 16px; /*Tamaño de la fuente*/
+    cursor: pointer; /*Mostrar el cursor en forma de mano cuando este por encima del menu desplegable*/
+    align-self: flex-end; /*Se alinea el elemento*/
+}
+
+.load-more:hover {
+    background-color: #103c8d; /*Color de fondo al pasar el cursor por encima*/
+    color: #ffffff; /*Color del texto al pasar el cursor por encima*/
+}
+
+.content h3 {
+    font-size: 20px; /* Tamaño de la fuente*/
+    margin-bottom: 10px; /*Margen inferior*/
+}
+
+.content {
+    color: #ffffff; /*Color del texto*/
+    font-size: 20px; /*Tamaño de la fuente*/
+}
+
+footer{
+    width: 100%; /*Ancho del footer*/
+    height: 100px; /*Alto del footer*/
+    background-color: #030303; /*Color del fondo*/
+    color: #f6f8fa; /*Color del texto*/
+    margin-top: 20px; /*Darle espacio superior */
+}
+footer p{
+    text-align: center;/*Texto centrado */
+    padding: 0px;
+}
+footer img{
+    display: block; /*Coloca imagen en el centro*/
+    margin: auto; /*Margen automatica*/
+    width: 60px; /*Ancho del logo*/
+    height: 60px; /*Alto del logo*/
+}
+
+@media (max-width:991px) { /*Permite que la pagina sea responsive*/
+    .menu {
+        padding: 20px; /*Espacio del menu*/
+
+    }
+
+    .menu label {
+        display: initial; /*Permite que el elemento se ajuste de la forma inicial*/
+    }
+
+    .menu .navbar {
+        position: absolute; /*Posicion absoluta*/
+        top: 100%; /* Espacio superior*/
+        left: 0;
+        right: 0;
+        background-color: #030303ad; /*Color de fondo*/
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%; /*Ancho*/
+    }
+
+    .btn-1 {
+        display: none;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial; /*Permite que el menu sea desplegable*/
+
+
+    }
+
+
+    .movies {
+        padding: 30px 90px; /*Tamaño de las peliculas*/
+    }
+
+
+}

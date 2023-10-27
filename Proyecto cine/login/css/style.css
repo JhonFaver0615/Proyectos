@@ -1,0 +1,209 @@
+* {
+	box-sizing: border-box; /* Permite que los elementos mantengan su tamaño*/
+	margin: 0; /*Margen del documento*/
+	padding: 0; /*Espacio en el documento*/
+	text-decoration: none; 
+	font-family: "Roboto";/*Darle fuente a la letra*/
+	outline: none;
+	border: none;
+}
+
+
+body{
+	height: 100%; /*Alto del container*/
+	width: 100%;
+	background-image: url('../imagen/fondo.jpg'); /*Permite añadir una imagen de fondo*/
+	background-size: cover; /*Permite mantener todas las proporciones de la imagen para que ocupe todo el contenedor*/
+	object-fit: cover; /*Limita el espacio*/
+
+}
+
+
+.align {
+	height: 100%; /*Alto del align*/
+	display: flex; /*Texto se acomode*/
+	align-items: center; /*Texto se centre*/
+	justify-content: center; /*Distribuir al centro*/
+	flex-direction: column; /*Ordenar los elementos en columna*/
+	padding-bottom: 12px; /*Espacio de relleno de la parte inferior*/
+
+}
+
+.logo {
+	width: 120px; /*Ancho del logo*/
+	padding-top: 40px; /*Espacio de relleno de la parte superior*/
+
+}
+
+#inicio{
+	color: #000000; /*Color de letras inicio*/
+	margin-top: 3px; /*Margen superior*/
+	border: 1px solid #00bcd4; /*Color del borde*/
+	width: 100px; /*Ancho del inicio*/
+	text-align: center; /*Para centrar el texto*/
+	border-radius: 10px; /*Borde al inicio*/
+	background-color: #00bbd42c; /* color de fondo*/
+
+
+}
+
+#inicio:hover{
+	background-color: #72c4c5;/*Color de fondo*/
+}
+
+.card {
+	margin-top: 28px; /*Margen superior*/
+	height: 100%; /*Alto del card*/
+	max-height: 446px; /*Alto del formulario*/
+	width: 396px; /*Ancho del card*/
+	background: #d2e4e260; /* Color del Fondo del formulario*/
+	border: 1px solid #00bcd4; /*color del borde del formulario*/
+	border-radius: 10px; /*Borde al formulario*/
+	overflow: hidden; /*Permite que se desborde el contenido*/
+	transition: max-height 0.2s; 
+}
+
+.extend {
+	max-height: 480px; /*Altura maxima*/
+}
+
+.head {
+	width: 100%; /*Ancho del head*/
+	display: flex; /*Es posible alterar las dimenciones*/
+	height: 72px; /*Alto del head*/
+	border-bottom: 1px solid #00bcd4; /*Permite añadir una linea*/
+	justify-content: space-between; /*Distribuir el espacio*/
+}
+
+.head a {
+	height: 100%; /*Ancho del head a */
+	display: flex; /*Es posible alterar las dimenciones*/
+	align-items: center; /*Texto centrado*/
+	justify-content: center; /*Distribuir al centro*/
+	color: #333333; /*Color del texto*/
+	font-size: 20px; /*Tamaño de la fuente*/
+	font-weight: 500; /*Grosor de la letra*/
+}
+
+.head .selected {
+	position: relative; /*Posicion relativa*/
+	color: #333333; /*Color del texto*/
+	font-weight: 700; /*Grosor de la letra*/
+}
+
+.head .selected:after {
+	position: absolute; /*Posicion absoluta*/
+	content: "";
+	bottom: 0;
+	left: 0;
+	height: 5px; /*Alto de la linea seleccionadora*/
+	width: 100%; /*Ancho de la linea seleccionadora*/
+	background: #4db6ac; /*Color de la linea seleccionadora*/
+	border-radius: 99px 99px 0 0; /*Borde de la linea seleccionadora */
+}
+
+.tabs {
+	height: calc(100% - 72px);
+	display: flex;/*Es posible alterar las dimenciones*/
+}
+
+form {
+	width: 100%; /*Ancho del cuadro de inicio de sesion*/ 
+	height: 100%; /*Alto del cuadro de inicio de sesion*/
+	flex-shrink: 0; 
+	padding: 44px 38px; /*Separar del borde*/
+	display: flex; /*Es posible alterar las dimenciones*/
+	flex-direction: column; /*Ordenar los elementos en columna*/
+	justify-content: space-between; /*Distribuir el espacio*/
+	align-items: center; /*Texto centrado*/
+	position: relative; /*Posicion relativa*/
+	right: 0;
+	transition: right 0.2s; 
+}
+
+.extend form {
+	right: 100%; /*Determinar el espacio a la derecha*/
+}
+
+.inputs {
+	width: 100%; /*Ancho de los inputs*/
+	padding-top: 6px; /*Espacio de relleno de la parte superior*/
+	
+}
+
+.input {
+	position: relative; /*Posicion relativa*/
+	margin-bottom: 20px; /*Distancia entre los botones del formulario*/
+	width: 100%; /*Ancho del input*/
+	display: flex; /*Es posible alterar las dimenciones*/
+	align-items: center; /*Texto centrado*/
+	
+}
+
+.input input {
+	width: 100%; /*Ancho de los botones del formulario*/
+	font-size: 17px; /*Tamaño del texto*/
+	background: #9bc0bc69; /*Color del fondo*/
+	border-radius: 8px; /*Borde de la linea*/
+	padding: 16px 18px 16px 51px; /*Determinar los espacios*/
+	color: #030303; /*Darle color al texto*/
+}
+
+.input img {
+	width: 30px;  /*Ancho de los logos*/
+	position: absolute; /*Posicio absoluta*/
+	left: 19px; /*Determinar el espacio a la izquierda*/
+}
+
+.checkbox {
+	height: 40px; /*Alto del checkbox*/
+	display: flex; /*Es posible alterar las dimenciones*/
+	align-items: center; /*Centrar el texto*/
+	position: relative;/*Posicion relativa*/
+	cursor: pointer; /*Determinar el cursor*/
+}
+
+.checkbox input {
+	position: absolute; /*Posicion absoluta*/
+	opacity: 0;
+	height: 0;
+	width: 0;
+	
+}
+
+.checkbox span {
+	display: flex; /*Es posible alterar las dimenciones*/
+	align-items: center; /*Centrar el texto*/
+	color: #333333; /*Darle color al texto*/
+	font-size: 16px; /*Tamaño de la fuente*/
+	user-select: none;
+}
+
+.checkbox span:before {
+	content: "";
+	width: 22px; /*Ancho del span*/
+ 	height: 22px; /*Alto del span*/
+	border-radius: 6px; /*Borde de la linea*/
+	margin-right: 16px; /* Margen a la izquierda*/
+	background-color: #4db6acad; /*Color de fondo*/
+}
+
+.checkbox:hover input ~ span:before {
+	background-color: #5d767385; /*Color de fondo*/
+}
+
+.checkbox input:checked ~ span:before {
+	background-image: url(../img/checked.png); /*Permite añadir una imagen*/
+	background-size: cover; /*Permite mantener todas las proporciones de la imagen para que ocupe todo el contenedor*/
+}
+
+.card button {
+	display: block; /*Mantenga estatico hacia abajo*/
+	background: #4db6acb0; /*Color de fondo*/
+	padding: 14px 52px; /*Determinar los espacios*/
+	border-radius: 12px; /*Borde de la linea*/
+	color: #333333; /*Color del texto*/
+	font-weight: 700; /*Grosor de la letra*/
+	font-size: 21px; /*Tamaño de la fuente*/
+	cursor: pointer; /*Determinar el cursor*/
+}

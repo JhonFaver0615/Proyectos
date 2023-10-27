@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Pagina en idioma español-->
+<head>
+    <meta charset="UTF-8"> <!--Permite utilizar caracteres especiales-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Permite ajustarse-->
+    <title>CineTime</title> <!--Titulo de la pagina-->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!--Permite llamar un archivo-->
+    <meta name="description" content="Esta es una pagina para ver los nuevos estrenos cinematograficos" /> <!--Descripcion asignada a la pagina-->
+    <meta name="keywords" content="peliculas, trailer, estrenos" /> <!--Palabras clave para la busqueda de la pagina--> 
+    <meta name="author" content="Jhon Faver Alvarez"> <!--Se define el autor de la pagina-->
+    <link rel="shortcut icon" href="imagen/logo-PhotoRoom.png"> <!--Permite añadir un icono a la pestaña-->
+</head>
+<body>
+    <header class="header">
+        <div class="menu container"> <!--Se crear las clases header y menu container-->
+
+            <a href="#" class="logo">CineTime</a> <!--Se escribe el logo-->
+            <input type="checkbox" id="menu"/> <!--Se crea un identificador unico llamado menu-->
+            <label for="menu"> <!--Determinar el identificador  unico-->
+                <img src="imagen/menu.png" class="menu-icono" alt="menu"> <!--Se inserta el icono del menu desplegable-->
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../Proyecto cine/index.html">Inicio</a></li>
+                    <li><a href="../Proyecto cine/trailers/trailers.html">Trailers</a></li>
+                    <li><a href="#">Nosotros</a></li> <!--Se declaran los navegadores-->
+                    
+                </ul>
+            </nav>
+            <a href="../Proyecto cine/login/indexloginreg.html" class="btn-1"> Login</a><!--Se declara el login-->
+        </div>
+    </header>
+    <section class="movies container"> <!--Se crea la clase movies container-->
+        <h2>Cartelera</h2> <!--Tituto de nivel 2-->
+        <hr> <!--Se crea una linea-->
+        <div class="box-container-1"> 
+            <div class="box-1">
+                <div class="content">
+                    <figure>
+                        <img src="imagen/elementos.jpg" alt=""> <!--Se inserta la portada de la primer pelicula-->
+                    
+                        <div class="capa">
+                            <h3>Elemental </h3> <!--Titulo de nivel 3-->
+                            <p>
+                                Elemental es una película de fantasía romántica animada por computadora estadounidense producida por Walt Disney Pictures y Pixar Animation Studios y distribuida por Walt Disney Studios Motion Pictures.
+                                Estreno: 22/06/2023 <!--Sinopsis-->
+                            </p>
+                        </div>
+                    </figure>
+                
+                </div>
+            </div>
+            <div class="box-1">
+                <div class="content">
+                    <figure>
+                        <img src="imagen/Demonio negro.jpg" alt=""> <!--Se inserta la portada de la segunda pelicula-->
+                        <div class="capa">
+                            <h3>Tiburon Negro </h3> <!--Titulo de nivel 3-->
+                            <p>
+                                Durante un viaje a Bahía Azul, el petrolero Paul Sturges (Josh Lucas) se encuentra varado junto con su familia en una plataforma donde los pecados de su pasado lo han puesto a él y a todo lo que ama en la mira de una fuerza siniestra que surge de las profundidades, un enorme megalodón mejor conocido como el Demonio Negro.
+                            </p> <!--Sinopsis-->
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <div class="box-1">
+                <div class="content">
+                    <figure>
+                        <img src="imagen/Barbie.jpg" alt=""><!--Se inserta la portada de la tercer pelicula-->
+                        <div class="capa">
+                            <h3>Barbie </h3> <!--Titulo de nivel 3-->
+                            <p>
+                                Después de ser expulsada de Barbieland por no ser una muñeca de aspecto perfecto, Barbie parte hacia el mundo humano para encontrar la verdadera felicidad.
+                            </p> <!--Sinopsis-->
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="load-more" id="load-more-1">Cargar mas</div><!--Se crea un identificador unico-->
+
+    </section>
+
+    <section class="movies container">
+        <h2>Peliculas mas vistas</h2> <!--Titulo de nivel 2-->
+        <hr> <!--Se crea una linea-->
+        <div class="box-container-2">
+            <div class="box-2">
+                <div class="content">
+                    <figure>
+                        <img src="imagen/elementos.jpg" alt=""> <!--Se inserta la portada de la cuarta pelicula-->
+                        <div class="capa">
+                            <h3>Elemental</h3> <!--Titulo de nivel 3-->
+                            <p>
+                                Elemental es una película de fantasía romántica animada por computadora estadounidense producida por Walt Disney Pictures y Pixar Animation Studios y distribuida por Walt Disney Studios Motion Pictures.
+                                Estreno: 22/06/2023 <!--Sinopsis-->
+                            </p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <div class="box-2">
+                <div class="content">
+                    <figure>
+                        <img src="imagen/openheimer.jpg" alt=""> <!--Se inserta la portada de la quinta pelicula-->
+                        <div class="capa">
+                            <h3>Openheimer </h3> <!--Titulo de nivel 3-->
+                            <p>
+                                El físico J Robert Oppenheimer trabaja con un equipo de científicos durante el Proyecto Manhattan, que condujo al desarrollo de la bomba atómica.
+                            </p> <!---Sinopsis-->
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <div class="box-2">
+                <div class="content">
+                    <figure>
+                        <img src="imagen/23.jpg" alt="">
+                        <div class="capa">
+                            <h3>Black Widow</h3>  <!--Titulo de nivel 3-->
+                            <p>
+                                Al nacer, la Viuda Negra, también conocida como Natasha Romanova, se entrega a la KGB para convertirse en su agente definitivo. Cuando la URSS se separa, el gobierno intenta matarla mientras la acción se traslada a la actual Nueva York.
+                            </p> <!--Sinopsis-->
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="load-more" id="load-more-2">Cargar mas</div> <!--Se crea un identificador unico-->
+
+    </section>
+
+
+    <footer> <!--Permite crear el pie de pagina-->
+        <a name="Contacto"><b><center>Estos - Nuestros contactos</center></b></a><br> <!--Se añade la informacion del pie de pagina-->
+        <img src="imagen/logo-PhotoRoom.png"/> <!--Permite añadir un logo-->
+        <p>
+            Desarrollo por Jhon Faver - CopyRight. - Año 2023 <!--Se añade texto-->
+        </p>
+    </footer>
+    
+    
+</body>
+</html>
